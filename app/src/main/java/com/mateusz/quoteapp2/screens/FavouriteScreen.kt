@@ -1,7 +1,5 @@
 package com.mateusz.quoteapp2.screens
 
-import android.graphics.Paint.Align
-import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -9,7 +7,6 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.pager.HorizontalPager
-import androidx.compose.foundation.pager.PagerState
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
@@ -24,14 +21,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mateusz.quoteapp2.data.Favourite
-import com.mateusz.quoteapp2.data.MainViewModel
-import com.mateusz.quoteapp2.data.Quote
+import com.mateusz.quoteapp2.data.model.Favourite
+import com.mateusz.quoteapp2.viewmodel.MainViewModel
+import com.mateusz.quoteapp2.data.model.Quote
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
@@ -128,7 +123,7 @@ fun FavouriteScreen(mainVm: MainViewModel) {
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun FavouriteQuoteScreen(mainVm: MainViewModel,favourites: List<Favourite>,favouriteId: Int){
+fun FavouriteQuoteScreen(mainVm: MainViewModel, favourites: List<Favourite>, favouriteId: Int){
     val themeColor = if (isSystemInDarkTheme()) Color.Black else Color.White
     val pagerState = rememberPagerState(initialPage = favouriteId)
     HorizontalPager(pageCount = favourites.size, state = pagerState) { page ->

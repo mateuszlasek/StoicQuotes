@@ -1,4 +1,4 @@
-package com.mateusz.quoteapp2
+package com.mateusz.quoteapp2.ui
 
 import android.util.LayoutDirection
 import android.util.Size

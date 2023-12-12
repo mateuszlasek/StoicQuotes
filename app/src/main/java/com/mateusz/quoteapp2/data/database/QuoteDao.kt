@@ -1,6 +1,7 @@
-package com.mateusz.quoteapp2.data
+package com.mateusz.quoteapp2.data.database
 
 import androidx.room.*
+import com.mateusz.quoteapp2.data.model.Quote
 import kotlinx.coroutines.flow.Flow
 
 @Dao

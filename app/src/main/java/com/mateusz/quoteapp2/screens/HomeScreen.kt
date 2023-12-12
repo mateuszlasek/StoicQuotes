@@ -17,13 +17,12 @@ import androidx.compose.material.icons.filled.Share
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mateusz.quoteapp2.data.MainViewModel
-import com.mateusz.quoteapp2.data.Quote
+import com.mateusz.quoteapp2.viewmodel.MainViewModel
+import com.mateusz.quoteapp2.data.model.Quote
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

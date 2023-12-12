@@ -1,5 +1,7 @@
-package com.mateusz.quoteapp2.data
+package com.mateusz.quoteapp2.repository
 
+import com.mateusz.quoteapp2.data.database.QuoteDao
+import com.mateusz.quoteapp2.data.model.Quote
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext

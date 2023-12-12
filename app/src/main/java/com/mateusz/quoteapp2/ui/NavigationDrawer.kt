@@ -1,4 +1,4 @@
-package com.mateusz.quoteapp2
+package com.mateusz.quoteapp2.ui
 
 
 import androidx.compose.foundation.clickable
@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.mateusz.quoteapp2.util.MenuItem
 
 @Composable
 fun DrawerHeader() {

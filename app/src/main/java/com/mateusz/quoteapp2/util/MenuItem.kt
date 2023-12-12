@@ -1,4 +1,4 @@
-package com.mateusz.quoteapp2
+package com.mateusz.quoteapp2.util
 
 import androidx.compose.ui.graphics.vector.ImageVector
 import java.io.FileDescriptor

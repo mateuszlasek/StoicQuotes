@@ -14,9 +14,13 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.mateusz.quoteapp2.data.MainViewModel
+import com.mateusz.quoteapp2.viewmodel.MainViewModel
 import com.mateusz.quoteapp2.screens.*
+import com.mateusz.quoteapp2.ui.DrawerBody
+import com.mateusz.quoteapp2.ui.DrawerHeader
+import com.mateusz.quoteapp2.ui.NavShape
 import com.mateusz.quoteapp2.ui.theme.QuoteApp2Theme
+import com.mateusz.quoteapp2.util.MenuItem
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
@@ -36,7 +40,7 @@ class MainActivity : ComponentActivity() {
                     drawerShape = NavShape(0.dp,0.58f),
                     scaffoldState = scaffoldState,
                     topBar = {
-                        AppBar(
+                        com.mateusz.quoteapp2.ui.AppBar(
                             onNavigationIconClick = {
                                 scope.launch {
                                     scaffoldState.drawerState.open()

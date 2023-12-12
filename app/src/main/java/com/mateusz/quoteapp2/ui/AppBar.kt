@@ -1,4 +1,4 @@
-package com.mateusz.quoteapp2
+package com.mateusz.quoteapp2.ui
 
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
